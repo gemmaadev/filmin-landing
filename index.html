@@ -10,7 +10,7 @@
     <!-- HEADER WITH NAV-->
     <header id="header" class="header">
       <nav class="header-nav">
-        <a href="#" class="header_logo">
+        <a href="/" class="header_logo">
           <img src="src/assets/icons/logo-filmin.jpg" alt="Filmin logo" />
         </a>
 
@@ -31,9 +31,7 @@
             <a href="#" class="header-menu-link">Festivales</a>
           </li>
           <li class="header-menu-item header-menu-item-dropdown">
-            <a href="#" class="header-menu-link"
-              >Más <span class="header-dropdown-arrow">▾</span></a
-            >
+            <a href="#" class="header-menu-link">Más ▾</a>
             <ul class="header-dropdown">
               <li><a href="#" class="header-dropdown-link">Recomendador</a></li>
               <li><a href="#" class="header-dropdown-link">Últimos días</a></li>
@@ -63,30 +61,33 @@
     <main>
       <!-- HERO SECTION -->
       <section id="hero">
-        <img
+        <!-- BACKGROUND IMAGE HERO IN CSS -->
+        <!-- <img
           src="src/assets/img/hero-image.jpg"
           alt="Joachim Trier's 'Sentimental Value'"
           id="hero-image"
-        />
+        /> -->
         <h1 id="hero-title">Si es cine, es Filmin</h1>
         <h2 id="hero-subtitle">
           Si vives como si estuvieras en una película, si siempre quieres ver un
           capítulo más o si sabes que el cine te puede cambiar tu vida.
         </h2>
         <form id="hero-form">
-          <label for="email">Introduce tu email aquí</label>
-          <input type="email" id="input-email" placeholder="Tu correo" />
-          <button class="hero-btn">Empezar</button>
+          <span id="input-text">Introduce tu email aquí</span>
+          <div id="email-wrapper">
+            <input type="email" id="input-email" placeholder="Tu correo" />
+            <button class="hero-btn">Empezar</button>
+          </div>
         </form>
       </section>
 
-      <section id="collection-recomendations">
+      <!-- COLLECTIONS SECTION -->
+      <section id="collection-recomendations" class="carrusel-section">
         <h2 class="section-title">
           Si quieres que te recomendemos, en formato colección
         </h2>
 
-        <!-- COLLECTIONS SECTION -->
-        <div id="carrusel-for-collections">
+        <div class="carrusel">
           <article class="collection-card">
             <img
               src="src/assets/img/card-best-movies-collection.webp"
@@ -146,10 +147,10 @@
       </section>
 
       <!-- TV-SHOWS SECTION -->
-      <section id="tv-shows-recomendations">
+      <section id="tv-shows-recomendations" class="carrusel-section">
         <h2 class="section-title">Si buscas una serie con mucho cine</h2>
 
-        <div id="carrusel-for-shows">
+        <div class="carrusel">
           <article class="tv-show-card">
             <img
               src="src/assets/img/coverart-amenaza-de-tormenta.webp"
@@ -201,11 +202,11 @@
       </section>
 
       <!-- REVIEWS SECTION -->
-      <section id="user-reviews">
+      <section id="user-reviews" class="carrusel-section">
         <h2 class="section-title">
           Si, además de ver películas, te gusta comentarlas
         </h2>
-        <div id="carrusel-for-reviews">
+        <div class="carrusel">
           <!-- REVIEW 1: Everything that goes on top of the image -->
           <article class="review-card">
             <div class="review-card-image-wrapper">
@@ -388,5 +389,87 @@
     </main>
 
     <!-- FOOTER -->
+    <footer class="footer">
+      <!-- ROW 1 -->
+      <div class="footer-top">
+        <nav class="footer-nav">
+          <a href="#">Centro de ayuda</a>
+          <a href="#">Canjear código</a>
+          <a href="#">Regala Filmin</a>
+          <a href="#">Aviso Legal</a>
+          <a href="#">Comunidad Filmin</a>
+          <a href="#">Cambiar preferencias de cookies</a>
+        </nav>
+
+        <div class="footer-social">
+          <a href="https://x.com/filmin" aria-label="X Twitter"
+            ><img
+              src="src/assets/icons/x-logo.png"
+              alt="Twitter logo"
+              class="twitter"
+            />
+          </a>
+          <a href="https://www.instagram.com/enfilmin" aria-label="Instagram"
+            ><img
+              src="src/assets/icons/instagram-logo.png"
+              alt="Instagram logo"
+              class="instagram"
+            />
+          </a>
+          <a href="https://www.tiktok.com/@enfilmin" aria-label="TikTok"
+            ><img
+              src="src/assets/icons/tiktok-logo.png"
+              alt="TikTok logo"
+              class="tiktok"
+            />
+          </a>
+          <a
+            href="https://www.linkedin.com/company/filmin"
+            aria-label="X Twitter"
+            ><img
+              src="src/assets/icons/linkedin-logo.png"
+              alt="Twitter logo"
+              class="twitter"
+            />
+          </a>
+          <a href="https://www.youtube.com/enFilmin" aria-label="YouTube"
+            ><img
+              src="src/assets/icons/youtube-logo.png"
+              alt="YouTube logo"
+              class="youtube"
+            />
+          </a>
+        </div>
+      </div>
+
+      <!-- SEPARADOR?
+      <hr class="footer-divider" /> -->
+
+      <!-- ROW 2 -->
+      <div class="footer-bottom">
+        <div class="footer-logos">
+          <div class="footer-eu-logo">
+            <p>
+              Cofinanciado por el<br />programa Europa Creativa<br />de la Unión
+              Europea
+            </p>
+            <img
+              src="src/assets/logos/logo-creative-europe-media.png"
+              alt="Creative Europe MEDIA"
+            />
+          </div>
+          <img
+            src="src/assets/logos/gobierno-espana-logo.png"
+            alt="Gobierno de España - Ministerio de Cultura"
+          />
+          <img
+            src="src/assets/logos/generalitat-catalunya-logo.png"
+            alt="Generalitat de Catalunya - Departament de Cultura"
+          />
+        </div>
+
+        <span class="footer-version">v7.34.0</span>
+      </div>
+    </footer>
   </body>
 </html>
