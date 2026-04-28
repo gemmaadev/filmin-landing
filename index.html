@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./src/css/style.css" />
   </head>
   <body>
+    <!-- HEADER WITH NAV-->
     <header id="header" class="header">
       <nav class="header-nav">
         <a href="#" class="header_logo">
@@ -57,5 +58,185 @@
         </div>
       </nav>
     </header>
+
+    <!-- MAIN -->
+    <main>
+      <!-- HERO SECTION -->
+      <section id="hero">
+        <img
+          src="src/assets/img/hero-image.jpg"
+          alt="Joachim Trier's 'Sentimental Value'"
+          id="hero-image"
+        />
+        <h1 id="hero-title">Si es cine, es Filmin</h1>
+        <h2 id="hero-subtitle">
+          Si vives como si estuvieras en una película, si siempre quieres ver un
+          capítulo más o si sabes que el cine te puede cambiar tu vida.
+        </h2>
+        <form id="hero-form">
+          <label for="email">Introduce tu email aquí</label>
+          <input type="email" id="input-email" placeholder="Tu correo" />
+          <button class="hero-btn">Empezar</button>
+        </form>
+      </section>
+
+      <section id="collection-recomendations">
+        <h2 class="section-title">
+          Si quieres que te recomendemos, en formato colección
+        </h2>
+
+        <!-- COLLECTIONS SECTION -->
+        <div id="carrusel-for-collections">
+          <article class="collection-card">
+            <img
+              src="src/assets/img/card-best-movies-collection.webp"
+              alt="Best movies collection"
+              class="card-image"
+            />
+          </article>
+
+          <article class="collection-card">
+            <img
+              src="src/assets/img/card-cineastas-collection.webp"
+              alt="Las cineastas collection"
+              class="card-image"
+            />
+          </article>
+
+          <article class="collection-card">
+            <img
+              src="src/assets/img/card-te-libros-crimenes.webp"
+              alt="Te, libros y crimenes collection"
+              class="card-image"
+            />
+          </article>
+
+          <article class="collection-card">
+            <img
+              src="src/assets/img/card-hollywood-hits.webp"
+              alt="Hits de Hollywood collection"
+              class="card-image"
+            />
+          </article>
+
+          <article class="collection-card">
+            <img
+              src="src/assets/img/card-primer-amor.webp"
+              alt="El descubrimiento del primer amor collection"
+              class="card-image"
+            />
+          </article>
+
+          <article class="collection-card">
+            <img
+              src="src/assets/img/card-llegan-al-corazon.webp"
+              alt="Historias que llegan al corazón collection"
+              class="card-image"
+            />
+          </article>
+
+          <article class="collection-card">
+            <img
+              src="src/assets/img/card-secretos-de-la-iglesia.webp"
+              alt="Los secretos de la iglesia collection"
+              class="card-image"
+            />
+          </article>
+        </div>
+      </section>
+
+      <!-- TV-SHOWS SECTION -->
+      <section id="tv-shows-recomendations">
+        <h2 class="section-title">Si buscas una serie con mucho cine</h2>
+
+        <div id="carrusel-for-shows">
+          <article class="tv-show-card">
+            <img
+              src="src/assets/img/coverart-amenaza-de-tormenta.webp"
+              alt="Amenaza de tormenta tv-show"
+              class="card-image"
+            />
+          </article>
+
+          <article class="tv-show-card">
+            <img
+              src="src/assets/img/coverart-esto-no-es-misterioso-asesinato.webp"
+              alt="Esto no es un misterioso asesinato tv-show"
+              class="card-image"
+            />
+          </article>
+
+          <article class="tv-show-card">
+            <img
+              src="src/assets/img/coverart-la-mujer-danesa.webp"
+              alt="La mujer danesa tv-show"
+              class="card-image"
+            />
+          </article>
+
+          <article class="tv-show-card">
+            <img
+              src="src/assets/img/coverart-the-hack.webp"
+              alt="The Hack tv-show"
+              class="card-image"
+            />
+          </article>
+
+          <article class="tv-show-card">
+            <img
+              src="src/assets/img/coverart-poirot.webp"
+              alt="Poirot tv-show"
+              class="card-image"
+            />
+          </article>
+
+          <article class="tv-show-card">
+            <img
+              src="src/assets/img/coverart-bookish.webp"
+              alt="Bookish tv-show"
+              class="card-image"
+            />
+          </article>
+        </div>
+      </section>
+
+      <!-- REVIEWS SECTION -->
+      <section id="user-reviews">
+        <h2 class="section-title">
+          Si, además de ver películas, te gusta comentarlas
+        </h2>
+        <div id="carrusel-for-reviews">
+          <!-- REVIEW 1: Everything that goes on top of the image -->
+          <article class="review-card">
+            <div class="review-card-image-wrapper">
+              <img
+                src="src/assets/img/por-todo-lo-alto-image.webp"
+                alt="Por todo lo alto review"
+                class="review-card-image"
+              />
+              <img
+                src="kneecap-title.webp"
+                alt="Kneecap logo"
+                class="review-card-logo"
+              />
+              <span class="review-card-rating">8.3</span>
+            </div>
+            <!-- REVIEW 1: Card body -->
+            <div class="review-card-body">
+              <img
+                src="src/assets/img/avatar.png"
+                alt="User avatar"
+                class="review-card-avatar"
+              />
+              <h4 class="review-card-username">Evitamoon</h4>
+              <p class="review-card-comment">
+                Aviso: puede provocar un poco de resaca 🤭 😂
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+    <!-- FOOTER -->
   </body>
 </html>
