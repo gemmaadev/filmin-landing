@@ -5,9 +5,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Tittle name</title>
     <link rel="stylesheet" href="./src/css/style.css" />
-    <!-- Aquí likeas tu html con tu css -->
   </head>
   <body>
-    <!-- Aquí va tu esqueleto HTML -->
+    <header id="header" class="header">
+      <nav class="header-nav">
+        <a href="#" class="header_logo">
+          <img src="src/assets/icons/logo-filmin.jpg" alt="Filmin logo" />
+        </a>
+
+        <ul class="header-menu">
+          <li class="header_menu-item">
+            <a href="#" class="header-menu-link">Inicio</a>
+          </li>
+          <li class="header_menu-item">
+            <a href="#" class="header-menu-link">Cine</a>
+          </li>
+          <li class="header-menu-item">
+            <a href="#" class="header-menu-link">Series</a>
+          </li>
+          <li class="header-menu-item">
+            <a href="#" class="header-menu-link">Colecciones</a>
+          </li>
+          <li class="header-menu-item">
+            <a href="#" class="header-menu-link">Festivales</a>
+          </li>
+          <li class="header-menu-item header-menu-item-dropdown">
+            <a href="#" class="header-menu-link"
+              >Más <span class="header-dropdown-arrow">▾</span></a
+            >
+            <ul class="header-dropdown">
+              <li><a href="#" class="header-dropdown-link">Recomendador</a></li>
+              <li><a href="#" class="header-dropdown-link">Últimos días</a></li>
+              <li><a href="#" class="header-dropdown-link">Novedades</a></li>
+              <li><a href="#" class="header-dropdown-link">Próximamente</a></li>
+              <li><a href="#" class="header-dropdown-link">Temas</a></li>
+              <li><a href="#" class="header-dropdown-link">Promociones</a></li>
+              <li>
+                <a href="#" class="header-dropdown-link">Regala Filmin</a>
+              </li>
+              <li>
+                <a href="#" class="header-dropdown-link">Centro de ayuda</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+
+        <div class="header_actions">
+          <a href="#" class="header_btn header_btn-primary">Suscribirse</a>
+          <a href="#" class="header_btn header_btn-secondary">Iniciar sesión</a>
+          <button class="header_search" aria-label="Buscar">🔍</button>
+        </div>
+      </nav>
+    </header>
   </body>
 </html>
