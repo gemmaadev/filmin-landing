@@ -8,468 +8,481 @@
   </head>
   <body>
     <!-- HEADER WITH NAV-->
-    <header id="header" class="header">
-      <nav class="header-nav">
-        <a href="/" class="header_logo">
-          <img src="src/assets/icons/logo-filmin.jpg" alt="Filmin logo" />
-        </a>
+    <div class="grid-layout">
+      <header id="header" class="header">
+        <nav class="header-nav">
+          <a href="/" class="header_logo">
+            <img src="src/assets/icons/logo-filmin.jpg" alt="Filmin logo" />
+          </a>
 
-        <ul class="header-menu">
-          <li class="header_menu-item">
-            <a href="#" class="header-menu-link">Inicio</a>
-          </li>
-          <li class="header_menu-item">
-            <a href="#" class="header-menu-link">Cine</a>
-          </li>
-          <li class="header-menu-item">
-            <a href="#" class="header-menu-link">Series</a>
-          </li>
-          <li class="header-menu-item">
-            <a href="#" class="header-menu-link">Colecciones</a>
-          </li>
-          <li class="header-menu-item">
-            <a href="#" class="header-menu-link">Festivales</a>
-          </li>
-          <li class="header-menu-item header-menu-item-dropdown">
-            <a href="#" class="header-menu-link">Más ▾</a>
-            <ul class="header-dropdown">
-              <li><a href="#" class="header-dropdown-link">Recomendador</a></li>
-              <li><a href="#" class="header-dropdown-link">Últimos días</a></li>
-              <li><a href="#" class="header-dropdown-link">Novedades</a></li>
-              <li><a href="#" class="header-dropdown-link">Próximamente</a></li>
-              <li><a href="#" class="header-dropdown-link">Temas</a></li>
-              <li><a href="#" class="header-dropdown-link">Promociones</a></li>
-              <li>
-                <a href="#" class="header-dropdown-link">Regala Filmin</a>
-              </li>
-              <li>
-                <a href="#" class="header-dropdown-link">Centro de ayuda</a>
-              </li>
-            </ul>
-          </li>
-        </ul>
+          <ul class="header-menu">
+            <li class="header_menu-item">
+              <a href="#" class="header-menu-link">Inicio</a>
+            </li>
+            <li class="header_menu-item">
+              <a href="#" class="header-menu-link">Cine</a>
+            </li>
+            <li class="header-menu-item">
+              <a href="#" class="header-menu-link">Series</a>
+            </li>
+            <li class="header-menu-item">
+              <a href="#" class="header-menu-link">Colecciones</a>
+            </li>
+            <li class="header-menu-item">
+              <a href="#" class="header-menu-link">Festivales</a>
+            </li>
+            <li class="header-menu-item header-menu-item-dropdown">
+              <a href="#" class="header-menu-link">Más ▾</a>
+              <ul class="header-dropdown">
+                <li>
+                  <a href="#" class="header-dropdown-link">Recomendador</a>
+                </li>
+                <li>
+                  <a href="#" class="header-dropdown-link">Últimos días</a>
+                </li>
+                <li><a href="#" class="header-dropdown-link">Novedades</a></li>
+                <li>
+                  <a href="#" class="header-dropdown-link">Próximamente</a>
+                </li>
+                <li><a href="#" class="header-dropdown-link">Temas</a></li>
+                <li>
+                  <a href="#" class="header-dropdown-link">Promociones</a>
+                </li>
+                <li>
+                  <a href="#" class="header-dropdown-link">Regala Filmin</a>
+                </li>
+                <li>
+                  <a href="#" class="header-dropdown-link">Centro de ayuda</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
 
-        <div class="header_actions">
-          <a href="#" class="header_btn header_btn-primary">Suscribirse</a>
-          <a href="#" class="header_btn header_btn-secondary">Iniciar sesión</a>
-          <button class="header_search" aria-label="Buscar">🔍</button>
-        </div>
-      </nav>
-    </header>
+          <div class="header_actions">
+            <a href="#" class="header_btn header_btn-primary">Suscribirse</a>
+            <a href="#" class="header_btn header_btn-secondary"
+              >Iniciar sesión</a
+            >
+            <button class="header_search" aria-label="Buscar">🔍</button>
+          </div>
+        </nav>
+      </header>
 
-    <!-- MAIN -->
-    <main>
-      <!-- HERO SECTION -->
-      <section id="hero">
-        <!-- BACKGROUND IMAGE HERO IN CSS -->
-        <!-- <img
+      <!-- MAIN -->
+      <main>
+        <!-- HERO SECTION -->
+        <section id="hero">
+          <!-- BACKGROUND IMAGE HERO IN CSS -->
+          <!-- <img
           src="src/assets/img/hero-image.jpg"
           alt="Joachim Trier's 'Sentimental Value'"
           id="hero-image"
         /> -->
-        <h1 id="hero-title">Si es cine, es Filmin</h1>
-        <h2 id="hero-subtitle">
-          Si vives como si estuvieras en una película, si siempre quieres ver un
-          capítulo más o si sabes que el cine te puede cambiar tu vida.
-        </h2>
-        <form id="hero-form">
-          <span id="input-text">Introduce tu email aquí</span>
-          <div id="email-wrapper">
-            <input type="email" id="input-email" placeholder="Tu correo" />
-            <button class="hero-btn">Empezar</button>
+          <h1 id="hero-title">Si es cine, es Filmin</h1>
+          <h2 id="hero-subtitle">
+            Si vives como si estuvieras en una película, si siempre quieres ver
+            un capítulo más o si sabes que el cine te puede cambiar tu vida.
+          </h2>
+          <form id="hero-form">
+            <span id="input-text">Introduce tu email aquí</span>
+            <div id="email-wrapper">
+              <input type="email" id="input-email" placeholder="Tu correo" />
+              <button class="hero-btn">Empezar</button>
+            </div>
+          </form>
+        </section>
+
+        <!-- COLLECTIONS SECTION -->
+        <section id="collection-recomendations" class="carrusel-section">
+          <h2 class="section-title">
+            Si quieres que te recomendemos, en formato colección
+          </h2>
+
+          <div class="carrusel">
+            <article class="collection-card">
+              <img
+                src="src/assets/img/card-best-movies-collection.webp"
+                alt="Best movies collection"
+                class="card-image"
+              />
+            </article>
+
+            <article class="collection-card">
+              <img
+                src="src/assets/img/card-cineastas-collection.webp"
+                alt="Las cineastas collection"
+                class="card-image"
+              />
+            </article>
+
+            <article class="collection-card">
+              <img
+                src="src/assets/img/card-te-libros-crimenes.webp"
+                alt="Te, libros y crimenes collection"
+                class="card-image"
+              />
+            </article>
+
+            <article class="collection-card">
+              <img
+                src="src/assets/img/card-hollywood-hits.webp"
+                alt="Hits de Hollywood collection"
+                class="card-image"
+              />
+            </article>
+
+            <article class="collection-card">
+              <img
+                src="src/assets/img/card-primer-amor.webp"
+                alt="El descubrimiento del primer amor collection"
+                class="card-image"
+              />
+            </article>
+
+            <article class="collection-card">
+              <img
+                src="src/assets/img/card-llegan-al-corazon.webp"
+                alt="Historias que llegan al corazón collection"
+                class="card-image"
+              />
+            </article>
+
+            <article class="collection-card">
+              <img
+                src="src/assets/img/card-secretos-de-la-iglesia.webp"
+                alt="Los secretos de la iglesia collection"
+                class="card-image"
+              />
+            </article>
           </div>
-        </form>
-      </section>
+        </section>
 
-      <!-- COLLECTIONS SECTION -->
-      <section id="collection-recomendations" class="carrusel-section">
-        <h2 class="section-title">
-          Si quieres que te recomendemos, en formato colección
-        </h2>
+        <!-- TV-SHOWS SECTION -->
+        <section id="tv-shows-recomendations" class="carrusel-section">
+          <h2 class="section-title">Si buscas una serie con mucho cine</h2>
 
-        <div class="carrusel">
-          <article class="collection-card">
-            <img
-              src="src/assets/img/card-best-movies-collection.webp"
-              alt="Best movies collection"
-              class="card-image"
-            />
-          </article>
+          <div class="carrusel">
+            <article class="tv-show-card">
+              <img
+                src="src/assets/img/coverart-amenaza-de-tormenta.webp"
+                alt="Amenaza de tormenta tv-show"
+                class="card-image"
+              />
+            </article>
 
-          <article class="collection-card">
-            <img
-              src="src/assets/img/card-cineastas-collection.webp"
-              alt="Las cineastas collection"
-              class="card-image"
-            />
-          </article>
+            <article class="tv-show-card">
+              <img
+                src="src/assets/img/coverart-esto-no-es-misterioso-asesinato.webp"
+                alt="Esto no es un misterioso asesinato tv-show"
+                class="card-image"
+              />
+            </article>
 
-          <article class="collection-card">
-            <img
-              src="src/assets/img/card-te-libros-crimenes.webp"
-              alt="Te, libros y crimenes collection"
-              class="card-image"
-            />
-          </article>
+            <article class="tv-show-card">
+              <img
+                src="src/assets/img/coverart-la-mujer-danesa.webp"
+                alt="La mujer danesa tv-show"
+                class="card-image"
+              />
+            </article>
 
-          <article class="collection-card">
-            <img
-              src="src/assets/img/card-hollywood-hits.webp"
-              alt="Hits de Hollywood collection"
-              class="card-image"
-            />
-          </article>
+            <article class="tv-show-card">
+              <img
+                src="src/assets/img/coverart-the-hack.webp"
+                alt="The Hack tv-show"
+                class="card-image"
+              />
+            </article>
 
-          <article class="collection-card">
-            <img
-              src="src/assets/img/card-primer-amor.webp"
-              alt="El descubrimiento del primer amor collection"
-              class="card-image"
-            />
-          </article>
+            <article class="tv-show-card">
+              <img
+                src="src/assets/img/coverart-poirot.webp"
+                alt="Poirot tv-show"
+                class="card-image"
+              />
+            </article>
 
-          <article class="collection-card">
-            <img
-              src="src/assets/img/card-llegan-al-corazon.webp"
-              alt="Historias que llegan al corazón collection"
-              class="card-image"
-            />
-          </article>
+            <article class="tv-show-card">
+              <img
+                src="src/assets/img/coverart-bookish.webp"
+                alt="Bookish tv-show"
+                class="card-image"
+              />
+            </article>
+          </div>
+        </section>
 
-          <article class="collection-card">
-            <img
-              src="src/assets/img/card-secretos-de-la-iglesia.webp"
-              alt="Los secretos de la iglesia collection"
-              class="card-image"
-            />
-          </article>
+        <!-- REVIEWS SECTION -->
+        <section id="user-reviews" class="carrusel-section">
+          <h2 class="section-title">
+            Si, además de ver películas, te gusta comentarlas
+          </h2>
+          <div class="carrusel">
+            <!-- REVIEW 1: Everything that goes on top of the image -->
+            <article class="review-card">
+              <div class="review-card-image-wrapper">
+                <img
+                  src="src/assets/img/kneecap-image.webp"
+                  alt="Kneecap"
+                  class="review-card-image"
+                />
+                <img
+                  src="src/assets/img/title-kneecap.webp"
+                  alt="Kneecap title"
+                  class="review-card-title"
+                />
+                <span class="review-card-rating">8.3</span>
+              </div>
+              <!-- REVIEW 1: Card body -->
+              <div class="review-card-body">
+                <img
+                  src="src/assets/icons/user-default1.png"
+                  alt="User avatar"
+                  class="default-avatar"
+                />
+                <h4 class="review-card-username">Evitamoon</h4>
+                <p class="review-card-comment">
+                  Aviso: puede provocar un poco de resaca 🤭 😂
+                </p>
+              </div>
+            </article>
+            <!-- REVIEW 2: Everything that goes on top of the image -->
+            <article class="review-card">
+              <div class="review-card-image-wrapper">
+                <img
+                  src="src/assets/img/por-todo-lo-alto-image.webp"
+                  alt="Por todo lo alto"
+                  class="review-card-image"
+                />
+                <img
+                  src="src/assets/img/title-por-todo-lo-alto.webp"
+                  alt="Por todo lo alto title"
+                  class="review-card-title"
+                />
+                <span class="review-card-rating">8.4</span>
+              </div>
+              <!-- REVIEW 2: Card body -->
+              <div class="review-card-body">
+                <img
+                  src="src/assets/icons/user-default2.png"
+                  alt="User avatar"
+                  class="default-avatar"
+                />
+                <h4 class="review-card-username">lu</h4>
+                <p class="review-card-comment">
+                  Jo, qué bonita, me encantó. Lloré como una magdalena, qué
+                  guay.
+                </p>
+              </div>
+            </article>
+
+            <!-- REVIEW 3: Everything that goes on top of the image -->
+            <article class="review-card">
+              <div class="review-card-image-wrapper">
+                <img
+                  src="src/assets/img/parthenope-image.webp"
+                  alt="Parthenope"
+                  class="review-card-image"
+                />
+                <img
+                  src="src/assets/img/title-parthenope.webp"
+                  alt="Parthenope title"
+                  class="review-card-title"
+                />
+                <span class="review-card-rating">7.5</span>
+              </div>
+              <!-- REVIEW 3: Card body -->
+              <div class="review-card-body">
+                <img
+                  src="src/assets/icons/user-default3.png"
+                  alt="User avatar"
+                  class="default-avatar"
+                />
+                <h4 class="review-card-username">Paula</h4>
+                <p class="review-card-comment">
+                  Si olvido lo divino, llamad a Sorrentino
+                </p>
+              </div>
+            </article>
+
+            <!-- REVIEW 4: Everything that goes on top of the image -->
+            <article class="review-card">
+              <div class="review-card-image-wrapper">
+                <img
+                  src="src/assets/img/chica-de-la-aguja-image.webp"
+                  alt="La chica de la aguja"
+                  class="review-card-image"
+                />
+                <img
+                  src="src/assets/img/title-chica-de-la-aguja.webp"
+                  alt="La chica de la aguja title"
+                  class="review-card-title"
+                />
+                <span class="review-card-rating">7.9</span>
+              </div>
+              <!-- REVIEW 4: Card body -->
+              <div class="review-card-body">
+                <img
+                  src="src/assets/icons/user-default4.png"
+                  alt="User avatar"
+                  class="default-avatar"
+                />
+                <h4 class="review-card-username">Ezequiel Fontaneda</h4>
+                <p class="review-card-comment">
+                  Durante buena parte de la película llegué a preguntarme si
+                  merecía la pena seguir viéndola a pesar de sus evidentes
+                  virtudes, me resultaba demasiado dura. La respuesta al
+                  acabarla fué si, y mucho.
+                </p>
+              </div>
+            </article>
+
+            <!-- REVIEW 5: Everything that goes on top of the image -->
+            <article class="review-card">
+              <div class="review-card-image-wrapper">
+                <img
+                  src="src/assets/img/muy-lejos-image.webp"
+                  alt="Muy lejos"
+                  class="review-card-image"
+                />
+                <img
+                  src="src/assets/img/title-muy-lejos.webp"
+                  alt="Muy lejos title"
+                  class="review-card-title"
+                />
+                <span class="review-card-rating">7.5</span>
+              </div>
+              <!-- REVIEW 5: Card body -->
+              <div class="review-card-body">
+                <img
+                  src="src/assets/icons/user-default1.png"
+                  alt="User avatar"
+                  class="default-avatar"
+                />
+                <h4 class="review-card-username">Alex</h4>
+                <p class="review-card-comment">
+                  Flipante. Pedazo de interpretación de Mario Casas. Inevitable
+                  recomendación.
+                </p>
+              </div>
+            </article>
+
+            <!-- REVIEW 6: Everything that goes on top of the image -->
+            <article class="review-card">
+              <div class="review-card-image-wrapper">
+                <img
+                  src="src/assets/img/flow-image.webp"
+                  alt="Flow"
+                  class="review-card-image"
+                />
+                <img
+                  src="src/assets/img/title-flow.webp"
+                  alt="Flow title"
+                  class="review-card-title"
+                />
+                <span class="review-card-rating">8.7</span>
+              </div>
+              <!-- REVIEW 6: Card body -->
+              <div class="review-card-body">
+                <img
+                  src="src/assets/icons/user-default2.png"
+                  alt="User avatar"
+                  class="default-avatar"
+                />
+                <h4 class="review-card-username">Adriana Lopez</h4>
+                <p class="review-card-comment">
+                  Nos ha gustado mucho. Muy poética y esperanzadora. El amor y
+                  la empatía nos salvarán.
+                </p>
+              </div>
+            </article>
+          </div>
+        </section>
+      </main>
+
+      <!-- FOOTER -->
+      <footer class="footer">
+        <!-- ROW 1 -->
+        <div class="footer-top">
+          <nav class="footer-nav">
+            <a href="#">Centro de ayuda</a>
+            <a href="#">Canjear código</a>
+            <a href="#">Regala Filmin</a>
+            <a href="#">Aviso Legal</a>
+            <a href="#">Comunidad Filmin</a>
+            <a href="#">Cambiar preferencias de cookies</a>
+          </nav>
+
+          <div class="footer-social">
+            <a href="https://x.com/filmin" aria-label="X Twitter"
+              ><img
+                src="src/assets/icons/x-logo.png"
+                alt="Twitter logo"
+                class="twitter"
+              />
+            </a>
+            <a href="https://www.instagram.com/enfilmin" aria-label="Instagram"
+              ><img
+                src="src/assets/icons/instagram-logo.png"
+                alt="Instagram logo"
+                class="instagram"
+              />
+            </a>
+            <a href="https://www.tiktok.com/@enfilmin" aria-label="TikTok"
+              ><img
+                src="src/assets/icons/tiktok-logo.png"
+                alt="TikTok logo"
+                class="tiktok"
+              />
+            </a>
+            <a
+              href="https://www.linkedin.com/company/filmin"
+              aria-label="X Twitter"
+              ><img
+                src="src/assets/icons/linkedin-logo.png"
+                alt="Twitter logo"
+                class="twitter"
+              />
+            </a>
+            <a href="https://www.youtube.com/enFilmin" aria-label="YouTube"
+              ><img
+                src="src/assets/icons/youtube-logo.png"
+                alt="YouTube logo"
+                class="youtube"
+              />
+            </a>
+          </div>
         </div>
-      </section>
 
-      <!-- TV-SHOWS SECTION -->
-      <section id="tv-shows-recomendations" class="carrusel-section">
-        <h2 class="section-title">Si buscas una serie con mucho cine</h2>
-
-        <div class="carrusel">
-          <article class="tv-show-card">
-            <img
-              src="src/assets/img/coverart-amenaza-de-tormenta.webp"
-              alt="Amenaza de tormenta tv-show"
-              class="card-image"
-            />
-          </article>
-
-          <article class="tv-show-card">
-            <img
-              src="src/assets/img/coverart-esto-no-es-misterioso-asesinato.webp"
-              alt="Esto no es un misterioso asesinato tv-show"
-              class="card-image"
-            />
-          </article>
-
-          <article class="tv-show-card">
-            <img
-              src="src/assets/img/coverart-la-mujer-danesa.webp"
-              alt="La mujer danesa tv-show"
-              class="card-image"
-            />
-          </article>
-
-          <article class="tv-show-card">
-            <img
-              src="src/assets/img/coverart-the-hack.webp"
-              alt="The Hack tv-show"
-              class="card-image"
-            />
-          </article>
-
-          <article class="tv-show-card">
-            <img
-              src="src/assets/img/coverart-poirot.webp"
-              alt="Poirot tv-show"
-              class="card-image"
-            />
-          </article>
-
-          <article class="tv-show-card">
-            <img
-              src="src/assets/img/coverart-bookish.webp"
-              alt="Bookish tv-show"
-              class="card-image"
-            />
-          </article>
-        </div>
-      </section>
-
-      <!-- REVIEWS SECTION -->
-      <section id="user-reviews" class="carrusel-section">
-        <h2 class="section-title">
-          Si, además de ver películas, te gusta comentarlas
-        </h2>
-        <div class="carrusel">
-          <!-- REVIEW 1: Everything that goes on top of the image -->
-          <article class="review-card">
-            <div class="review-card-image-wrapper">
-              <img
-                src="src/assets/img/kneecap-image.webp"
-                alt="Kneecap"
-                class="review-card-image"
-              />
-              <img
-                src="src/assets/img/title-kneecap.webp"
-                alt="Kneecap title"
-                class="review-card-title"
-              />
-              <span class="review-card-rating">8.3</span>
-            </div>
-            <!-- REVIEW 1: Card body -->
-            <div class="review-card-body">
-              <img
-                src="src/assets/icons/user-default1.png"
-                alt="User avatar"
-                class="default-avatar"
-              />
-              <h4 class="review-card-username">Evitamoon</h4>
-              <p class="review-card-comment">
-                Aviso: puede provocar un poco de resaca 🤭 😂
-              </p>
-            </div>
-          </article>
-          <!-- REVIEW 2: Everything that goes on top of the image -->
-          <article class="review-card">
-            <div class="review-card-image-wrapper">
-              <img
-                src="src/assets/img/por-todo-lo-alto-image.webp"
-                alt="Por todo lo alto"
-                class="review-card-image"
-              />
-              <img
-                src="src/assets/img/title-por-todo-lo-alto.webp"
-                alt="Por todo lo alto title"
-                class="review-card-title"
-              />
-              <span class="review-card-rating">8.4</span>
-            </div>
-            <!-- REVIEW 2: Card body -->
-            <div class="review-card-body">
-              <img
-                src="src/assets/icons/user-default2.png"
-                alt="User avatar"
-                class="default-avatar"
-              />
-              <h4 class="review-card-username">lu</h4>
-              <p class="review-card-comment">
-                Jo, qué bonita, me encantó. Lloré como una magdalena, qué guay.
-              </p>
-            </div>
-          </article>
-
-          <!-- REVIEW 3: Everything that goes on top of the image -->
-          <article class="review-card">
-            <div class="review-card-image-wrapper">
-              <img
-                src="src/assets/img/parthenope-image.webp"
-                alt="Parthenope"
-                class="review-card-image"
-              />
-              <img
-                src="src/assets/img/title-parthenope.webp"
-                alt="Parthenope title"
-                class="review-card-title"
-              />
-              <span class="review-card-rating">7.5</span>
-            </div>
-            <!-- REVIEW 3: Card body -->
-            <div class="review-card-body">
-              <img
-                src="src/assets/icons/user-default3.png"
-                alt="User avatar"
-                class="default-avatar"
-              />
-              <h4 class="review-card-username">Paula</h4>
-              <p class="review-card-comment">
-                Si olvido lo divino, llamad a Sorrentino
-              </p>
-            </div>
-          </article>
-
-          <!-- REVIEW 4: Everything that goes on top of the image -->
-          <article class="review-card">
-            <div class="review-card-image-wrapper">
-              <img
-                src="src/assets/img/chica-de-la-aguja-image.webp"
-                alt="La chica de la aguja"
-                class="review-card-image"
-              />
-              <img
-                src="src/assets/img/title-chica-de-la-aguja.webp"
-                alt="La chica de la aguja title"
-                class="review-card-title"
-              />
-              <span class="review-card-rating">7.9</span>
-            </div>
-            <!-- REVIEW 4: Card body -->
-            <div class="review-card-body">
-              <img
-                src="src/assets/icons/user-default4.png"
-                alt="User avatar"
-                class="default-avatar"
-              />
-              <h4 class="review-card-username">Ezequiel Fontaneda</h4>
-              <p class="review-card-comment">
-                Durante buena parte de la película llegué a preguntarme si
-                merecía la pena seguir viéndola a pesar de sus evidentes
-                virtudes, me resultaba demasiado dura. La respuesta al acabarla
-                fué si, y mucho.
-              </p>
-            </div>
-          </article>
-
-          <!-- REVIEW 5: Everything that goes on top of the image -->
-          <article class="review-card">
-            <div class="review-card-image-wrapper">
-              <img
-                src="src/assets/img/muy-lejos-image.webp"
-                alt="Muy lejos"
-                class="review-card-image"
-              />
-              <img
-                src="src/assets/img/title-muy-lejos.webp"
-                alt="Muy lejos title"
-                class="review-card-title"
-              />
-              <span class="review-card-rating">7.5</span>
-            </div>
-            <!-- REVIEW 5: Card body -->
-            <div class="review-card-body">
-              <img
-                src="src/assets/icons/user-default1.png"
-                alt="User avatar"
-                class="default-avatar"
-              />
-              <h4 class="review-card-username">Alex</h4>
-              <p class="review-card-comment">
-                Flipante. Pedazo de interpretación de Mario Casas. Inevitable
-                recomendación.
-              </p>
-            </div>
-          </article>
-
-          <!-- REVIEW 6: Everything that goes on top of the image -->
-          <article class="review-card">
-            <div class="review-card-image-wrapper">
-              <img
-                src="src/assets/img/flow-image.webp"
-                alt="Flow"
-                class="review-card-image"
-              />
-              <img
-                src="src/assets/img/title-flow.webp"
-                alt="Flow title"
-                class="review-card-title"
-              />
-              <span class="review-card-rating">8.7</span>
-            </div>
-            <!-- REVIEW 6: Card body -->
-            <div class="review-card-body">
-              <img
-                src="src/assets/icons/user-default2.png"
-                alt="User avatar"
-                class="default-avatar"
-              />
-              <h4 class="review-card-username">Adriana Lopez</h4>
-              <p class="review-card-comment">
-                Nos ha gustado mucho. Muy poética y esperanzadora. El amor y la
-                empatía nos salvarán.
-              </p>
-            </div>
-          </article>
-        </div>
-      </section>
-    </main>
-
-    <!-- FOOTER -->
-    <footer class="footer">
-      <!-- ROW 1 -->
-      <div class="footer-top">
-        <nav class="footer-nav">
-          <a href="#">Centro de ayuda</a>
-          <a href="#">Canjear código</a>
-          <a href="#">Regala Filmin</a>
-          <a href="#">Aviso Legal</a>
-          <a href="#">Comunidad Filmin</a>
-          <a href="#">Cambiar preferencias de cookies</a>
-        </nav>
-
-        <div class="footer-social">
-          <a href="https://x.com/filmin" aria-label="X Twitter"
-            ><img
-              src="src/assets/icons/x-logo.png"
-              alt="Twitter logo"
-              class="twitter"
-            />
-          </a>
-          <a href="https://www.instagram.com/enfilmin" aria-label="Instagram"
-            ><img
-              src="src/assets/icons/instagram-logo.png"
-              alt="Instagram logo"
-              class="instagram"
-            />
-          </a>
-          <a href="https://www.tiktok.com/@enfilmin" aria-label="TikTok"
-            ><img
-              src="src/assets/icons/tiktok-logo.png"
-              alt="TikTok logo"
-              class="tiktok"
-            />
-          </a>
-          <a
-            href="https://www.linkedin.com/company/filmin"
-            aria-label="X Twitter"
-            ><img
-              src="src/assets/icons/linkedin-logo.png"
-              alt="Twitter logo"
-              class="twitter"
-            />
-          </a>
-          <a href="https://www.youtube.com/enFilmin" aria-label="YouTube"
-            ><img
-              src="src/assets/icons/youtube-logo.png"
-              alt="YouTube logo"
-              class="youtube"
-            />
-          </a>
-        </div>
-      </div>
-
-      <!-- SEPARADOR?
+        <!-- SEPARADOR?
       <hr class="footer-divider" /> -->
 
-      <!-- ROW 2 -->
-      <div class="footer-bottom">
-        <div class="footer-logos">
-          <div class="footer-eu-logo">
-            <p>
-              Cofinanciado por el<br />programa Europa Creativa<br />de la Unión
-              Europea
-            </p>
+        <!-- ROW 2 -->
+        <div class="footer-bottom">
+          <div class="footer-logos">
+            <div class="footer-eu-logo">
+              <p>
+                Cofinanciado por el<br />programa Europa Creativa<br />de la
+                Unión Europea
+              </p>
+              <img
+                src="src/assets/logos/logo-creative-europe-media.png"
+                alt="Creative Europe MEDIA"
+              />
+            </div>
             <img
-              src="src/assets/logos/logo-creative-europe-media.png"
-              alt="Creative Europe MEDIA"
+              src="src/assets/logos/gobierno-espana-logo.png"
+              alt="Gobierno de España - Ministerio de Cultura"
+            />
+            <img
+              src="src/assets/logos/generalitat-catalunya-logo.png"
+              alt="Generalitat de Catalunya - Departament de Cultura"
             />
           </div>
-          <img
-            src="src/assets/logos/gobierno-espana-logo.png"
-            alt="Gobierno de España - Ministerio de Cultura"
-          />
-          <img
-            src="src/assets/logos/generalitat-catalunya-logo.png"
-            alt="Generalitat de Catalunya - Departament de Cultura"
-          />
-        </div>
 
-        <span class="footer-version">v7.34.0</span>
-      </div>
-    </footer>
+          <span class="footer-version">v7.34.0</span>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>
