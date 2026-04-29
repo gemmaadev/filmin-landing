@@ -70,20 +70,17 @@ main {
 
 /* HERO */
 #hero {
-  /* pc: min-height: 100vh; */
   min-height: 80%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: start;
-  /* pc:justify-content: start; */
+
   text-align: center;
   gap: 1.625rem;
   max-width: 100vw;
   padding: 20px;
 
-  /* Imatge de fons */
-  /* background-image: pc:url("../assets/img/hero-image.jpg"); */
   background-image: url("../assets/img/hero-mobile.jpg");
   background-size: cover;
   background-repeat: none;
@@ -284,4 +281,30 @@ main {
 #footer-version {
   color: #888;
   font-size: clamp(0.6rem, 0.8vw, 0.7rem);
+}
+/* Tablet and pc size */
+@media screen and (min-width: 768px) {
+  #hero {
+    min-height: 100vh;
+    justify-content: center;
+    background-image: url("../assets/img/hero-image.jpg");
+    padding: 40px;
+  }
+
+  #email-wrapper {
+    flex-direction: row;
+  }
+}
+
+#hero-title {
+  font-size: clamp(2rem, 5vw, 4rem);
+}
+
+#hero-subtitle {
+  font-size: clamp(1rem, 2vw, 1.4rem);
+  max-width: 800px;
+}
+
+#hero-form {
+  max-width: 600px;
 }
