@@ -289,38 +289,38 @@ main {
   #email-wrapper {
     flex-direction: row;
   }
-}
 
-#hero-title {
-  font-size: clamp(2rem, 5vw, 4rem);
-}
+  #hero-title {
+    font-size: clamp(2rem, 5vw, 4rem);
+  }
 
-#hero-subtitle {
-  font-size: clamp(1rem, 2vw, 1.4rem);
-  max-width: 800px;
-}
+  #hero-subtitle {
+    font-size: clamp(1rem, 2vw, 1.4rem);
+    max-width: 800px;
+  }
 
-#hero-form {
-  max-width: 600px;
-}
+  #hero-form {
+    max-width: 600px;
+  }
 
-/* Carrusels */
+  /* Carrusels */
 
-#hero-form {
-  max-width: 600px;
-}
+  #hero-form {
+    max-width: 600px;
+  }
 
-.carrusel-section {
-  padding: 2.5rem;
-}
+  .carrusel-section {
+    padding: 2.5rem;
+  }
 
-.section-title {
-  font-size: clamp(1rem, 2vw, 2rem);
-}
-.collection-card {
-  width: calc(20% - 10px);
-}
+  .section-title {
+    font-size: clamp(1rem, 2vw, 2rem);
+  }
+  .collection-card {
+    width: calc(20% - 10px);
+  }
 
-.tv-show-card {
-  width: calc(25% - 9px);
+  .tv-show-card {
+    width: calc(25% - 9px);
+  }
 }
