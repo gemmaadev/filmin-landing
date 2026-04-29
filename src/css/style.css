@@ -1,6 +1,4 @@
 /*
-    - PRIMER CARRUSSEL + COMMIT 
-    - SEGON CARRUSSEL + COMMIT 
     - FOOTER + COMMIT 
     - TERCER CARRUSSEL + COMMIT (MÉS TEMPS)
     - HEADER + COMMIT 
@@ -13,7 +11,6 @@
 */
 
 /* RESET — eliminar marges i padding per defecte del navegador */
-
 * {
   margin: 0;
   padding: 0;
@@ -169,4 +166,81 @@ main {
 .tv-show-card {
   flex-shrink: 0;
   width: calc(25% - 9px);
+}
+
+/* FOOTER */
+
+.footer {
+  padding: 24px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-nav {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.footer-nav a {
+  color: #888;
+  font-size: 0.85rem;
+  text-decoration: none;
+}
+
+.footer-nav a:hover {
+  color: white;
+}
+
+.footer-social {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.social-logo {
+  height: 35px;
+  width: auto;
+}
+
+.footer-bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-logos {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+}
+
+.footer-logos img {
+  height: 40px;
+  width: auto;
+}
+
+.footer-eu-logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.footer-eu-text {
+  color: #888;
+  font-size: 0.7rem;
+}
+
+#footer-version {
+  color: #888;
+  font-size: 0.7rem;
 }
