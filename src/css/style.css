@@ -1,6 +1,4 @@
 /*
-    - FOOTER + COMMIT 
-    - TERCER CARRUSSEL + COMMIT (MÉS TEMPS)
     - HEADER + COMMIT 
 
     IMPORTANT:
@@ -17,8 +15,35 @@
   box-sizing: border-box;
 }
 
+/* Tipografia heretada als controls */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Imatges responsives */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* Body base */
 body {
-  font-family: "Open Sans", Arial, sans-serif;
+  font-family: "Inter", sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  background-color: #060614;
+}
+
+/* Focus accessible */
+:focus-visible {
+  outline: 0.1875rem solid #00ff98;
 }
 
 .header {
@@ -27,6 +52,9 @@ body {
 
 main {
   background-color: #060614;
+  display: flex;
+  flex-direction: column;
+  max-width: 100vw;
 }
 
 .footer {
@@ -36,37 +64,44 @@ main {
 .grid-layout {
   display: grid;
   grid-template-rows: 60px 1fr auto;
+  max-width: 100vw;
   min-height: 100vh;
 }
 
 /* HERO */
 #hero {
-  min-height: 100vh;
+  /* pc: min-height: 100vh; */
+  min-height: 80%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: start;
+  /* pc:justify-content: start; */
   text-align: center;
-  gap: 26px;
+  gap: 1.625rem;
+  max-width: 100vw;
+  padding: 20px;
 
   /* Imatge de fons */
-  background-image: url("../assets/img/hero-image.jpg");
+  /* background-image: pc:url("../assets/img/hero-image.jpg"); */
+  background-image: url("../assets/img/hero-mobile.jpg");
   background-size: cover;
+  background-repeat: none;
   background-position: center;
 }
 
 /* TÍTOL */
 #hero-title {
-  font-size: clamp(2rem, 5vw, 4rem);
+  font-size: 34px;
+  font-weight: 800;
   color: white;
 }
 
 /* SUBTÍTOL */
 #hero-subtitle {
-  font-size: clamp(1rem, 2vw, 1.4rem);
-  font-weight: 400;
+  font-size: 20px;
+  font-weight: 550;
   color: white;
-  max-width: 700px;
 }
 
 /* FORMULARI */
@@ -74,42 +109,48 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 14px;
+  gap: 0.875rem;
   width: 100%;
-  max-width: 600px;
+  /* pc: max-width: 600px; */
 }
 
 /* TEXT SOBRE EL INPUT */
 #input-text {
   color: white;
-  font-size: 1rem;
+  font-size: 18px;
+  font-weight: 600;
 }
 
 /* WRAPPER INPUT + BOTÓ */
 #email-wrapper {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
-  gap: 15px;
+  gap: 1rem;
 }
 
 /* INPUT EMAIL */
 #input-email {
-  flex: 1;
-  padding: 14px 20px;
-  font-size: 1rem;
+  display: flex;
+  width: 100%;
+  padding: 0.875rem 1.25rem;
+  font-size: clamp(0.875rem, 1.5vw, 1rem);
   background: #060614;
-  border: 2px solid #6f6f84;
+  border: 0.125rem solid #6f6f84;
   color: #83838b;
 }
 
 /* BOTÓ */
 .hero-btn {
-  padding: 14px 28px;
+  padding: 0.875rem 1.75rem;
   background: #00ff98;
+  font-weight: 600;
   color: #0a0a0a;
   border: none;
-  border-radius: 4px;
+  border-radius: 0.25rem;
   cursor: pointer;
+  width: fit-content;
 }
 
 .hero-btn:hover {
@@ -123,19 +164,19 @@ main {
   align-items: start;
   justify-content: center;
   text-align: start;
-  padding: 40px;
-  gap: 16px;
+  padding: 2.5rem;
+  gap: 1rem;
 }
 
 .section-title {
   color: white;
-  font-size: 2rem;
+  font-size: clamp(1rem, 2vw, 2rem);
 }
 
 .carrusel {
   display: flex;
   overflow-x: auto;
-  gap: 12px;
+  gap: 0.75rem;
   scrollbar-width: none;
   width: 100%;
 }
@@ -144,10 +185,10 @@ main {
   display: none;
 }
 
-.card-image {
+/* .card-image {
   width: 100%;
   display: block;
-}
+} */
 
 /* COLLECTIONS SECTION */
 
@@ -171,10 +212,10 @@ main {
 /* FOOTER */
 
 .footer {
-  padding: 24px 40px;
+  padding: 1.5rem 2.5rem;
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 1rem;
 }
 
 .footer-top {
@@ -185,13 +226,13 @@ main {
 
 .footer-nav {
   display: flex;
-  gap: 40px;
+  gap: 2.5rem;
   align-items: center;
 }
 
 .footer-nav a {
   color: #888;
-  font-size: 0.85rem;
+  font-size: clamp(0.7rem, 1vw, 0.85rem);
   text-decoration: none;
 }
 
@@ -202,11 +243,11 @@ main {
 .footer-social {
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 1rem;
 }
 
 .social-logo {
-  height: 35px;
+  height: 2.2rem;
   width: auto;
 }
 
@@ -221,26 +262,26 @@ main {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 16px;
+  gap: 1rem;
 }
 
 .footer-logos img {
-  height: 40px;
+  height: 2.5rem;
   width: auto;
 }
 
 .footer-eu-logo {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 0.5rem;
 }
 
 .footer-eu-text {
   color: #888;
-  font-size: 0.7rem;
+  font-size: clamp(0.6rem, 0.8vw, 0.7rem);
 }
 
 #footer-version {
   color: #888;
-  font-size: 0.7rem;
+  font-size: clamp(0.6rem, 0.8vw, 0.7rem);
 }
