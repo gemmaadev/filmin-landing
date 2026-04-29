@@ -161,13 +161,15 @@ main {
   align-items: start;
   justify-content: center;
   text-align: start;
-  padding: 2.5rem;
+  /* PC > padding: 2.5rem; */
+  padding: 40px 18px 18px 18px;
   gap: 1rem;
 }
 
 .section-title {
   color: white;
-  font-size: clamp(1rem, 2vw, 2rem);
+  /* PC > font-size: clamp(1rem, 2vw, 2rem); */
+  font-size: 18px;
 }
 
 .carrusel {
@@ -182,28 +184,24 @@ main {
   display: none;
 }
 
-/* .card-image {
-  width: 100%;
-  display: block;
-} */
-
 /* COLLECTIONS SECTION */
-
-#collection-recomendations {
-}
 
 .collection-card {
   flex-shrink: 0;
-  width: calc(20% - 10px);
+  /* per PC > width: calc(20% - 10px); */
+  width: 160px;
 }
 
 /* TV-SHOWS SECTION */
-#tv-shows-recomendations {
-}
 
 .tv-show-card {
   flex-shrink: 0;
-  width: calc(25% - 9px);
+  width: 350px;
+  /* per PC > width: calc(25% - 9px); */
+}
+
+#tv-shows-recomendations {
+  padding-bottom: 80px;
 }
 
 /* FOOTER */
