@@ -1,7 +1,4 @@
 /*
-    Aquí va tu código CSS
-
-    - HERO + COMMIT
     - PRIMER CARRUSSEL + COMMIT 
     - SEGON CARRUSSEL + COMMIT 
     - FOOTER + COMMIT 
@@ -25,6 +22,18 @@
 
 body {
   font-family: "Open Sans", Arial, sans-serif;
+}
+
+.header {
+  background-color: #060614;
+}
+
+main {
+  background-color: #060614;
+}
+
+.footer {
+  background-color: #060614;
 }
 
 .grid-layout {
@@ -108,4 +117,56 @@ body {
 
 .hero-btn:hover {
   background: #5effc3;
+}
+
+/* GENERAL CARRUSSELS */
+.carrusel-section {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  text-align: start;
+  padding: 40px;
+  gap: 16px;
+}
+
+.section-title {
+  color: white;
+  font-size: 2rem;
+}
+
+.carrusel {
+  display: flex;
+  overflow-x: auto;
+  gap: 12px;
+  scrollbar-width: none;
+  width: 100%;
+}
+
+.carrusel::-webkit-scrollbar {
+  display: none;
+}
+
+.card-image {
+  width: 100%;
+  display: block;
+}
+
+/* COLLECTIONS SECTION */
+
+#collection-recomendations {
+}
+
+.collection-card {
+  flex-shrink: 0;
+  width: calc(20% - 10px);
+}
+
+/* TV-SHOWS SECTION */
+#tv-shows-recomendations {
+}
+
+.tv-show-card {
+  flex-shrink: 0;
+  width: calc(25% - 9px);
 }
