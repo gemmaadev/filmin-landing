@@ -108,7 +108,6 @@ main {
   align-items: center;
   gap: 0.875rem;
   width: 100%;
-  /* pc: max-width: 600px; */
 }
 
 /* TEXT SOBRE EL INPUT */
@@ -161,14 +160,12 @@ main {
   align-items: start;
   justify-content: center;
   text-align: start;
-  /* PC > padding: 2.5rem; */
   padding: 40px 18px 18px 18px;
   gap: 1rem;
 }
 
 .section-title {
   color: white;
-  /* PC > font-size: clamp(1rem, 2vw, 2rem); */
   font-size: 18px;
 }
 
@@ -188,7 +185,6 @@ main {
 
 .collection-card {
   flex-shrink: 0;
-  /* per PC > width: calc(20% - 10px); */
   width: 160px;
 }
 
@@ -197,7 +193,6 @@ main {
 .tv-show-card {
   flex-shrink: 0;
   width: 350px;
-  /* per PC > width: calc(25% - 9px); */
 }
 
 #tv-shows-recomendations {
@@ -281,6 +276,8 @@ main {
   font-size: clamp(0.6rem, 0.8vw, 0.7rem);
 }
 /* Tablet and pc size */
+
+/* Hero */
 @media screen and (min-width: 768px) {
   #hero {
     min-height: 100vh;
@@ -305,4 +302,25 @@ main {
 
 #hero-form {
   max-width: 600px;
+}
+
+/* Carrusels */
+
+#hero-form {
+  max-width: 600px;
+}
+
+.carrusel-section {
+  padding: 2.5rem;
+}
+
+.section-title {
+  font-size: clamp(1rem, 2vw, 2rem);
+}
+.collection-card {
+  width: calc(20% - 10px);
+}
+
+.tv-show-card {
+  width: calc(25% - 9px);
 }
