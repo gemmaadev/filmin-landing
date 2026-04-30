@@ -4,13 +4,18 @@
 
 This project consists of a responsive web layout that recreates the visual structure and user interface of the Filmin landing page using pure HTML and CSS.
 
-The goal is to practice semantic markup, layout techniques (Flexbox and Grid), and responsive design by replicating a real-world streaming platform interface. It includes key sections such as the hero, featured collections, recommended TV shows, and user review cards.
+The goal is to practice semantic markup, layout techniques (Flexbox and Grid), and responsive design by replicating a real-world streaming platform interface. It includes key sections such as the hero, featured collections and recommended TV shows.
 
 ## Preview
 
 <!-- Add a screenshot or GIF of your project here -->
+Project preview mobile-first version
 
-![Project preview](path/to/your/screenshot.png)
+![Project preview mobile-first version](filmin-landing-mobile.png)
+
+Project preview desk version
+
+![Project preview desk version](filmin-landing-desk.png)
 
 ## Project Structure
 
