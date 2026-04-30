@@ -37,7 +37,14 @@
                 <a href="#" class="header-menu-link">Festivales</a>
               </li>
               <li class="header-menu-item header-menu-item-dropdown">
-                <a href="#" class="header-menu-link">Más ▾</a>
+                <a
+                  href="#"
+                  class="header-menu-link"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  role="button"
+                  >Más ▾</a
+                >
 
                 <!-- <ul class="header-dropdown">
                 <li>
@@ -93,22 +100,20 @@
       >
         <!-- HERO SECTION -->
         <section id="hero">
-          <!-- BACKGROUND IMAGE HERO IN CSS -->
-          <!-- <img
-          src="src/assets/img/hero-image.jpg"
-          alt="Joachim Trier's 'Sentimental Value'"
-          id="hero-image"
-        /> -->
           <h1 id="hero-title">Si es cine, es Filmin</h1>
-          <h2 id="hero-subtitle">
+          <p id="hero-subtitle">
             Si vives como si estuvieras en una película, si siempre quieres ver
             un capítulo más o si sabes que el cine te puede cambiar tu vida.
-          </h2>
+          </p>
           <form id="hero-form">
-            <span id="input-text">Introduce tu email aquí</span>
+            <label for="input-email" class="form-label"
+              >Introduce tu email aquí</label
+            >
             <div id="email-wrapper">
               <input type="email" id="input-email" placeholder="Tu correo" />
-              <button class="hero-btn"><strong>EMPEZAR</strong></button>
+              <button class="hero-btn" aria-label="Empezar registro con email">
+                <strong>EMPEZAR</strong>
+              </button>
             </div>
           </form>
         </section>
@@ -123,7 +128,7 @@
             <article class="collection-card">
               <img
                 src="src/assets/img/card-best-movies-collection.webp"
-                alt="Best movies collection"
+                alt="Colección de mejores películas"
                 class="card-image"
               />
             </article>
@@ -131,7 +136,7 @@
             <article class="collection-card">
               <img
                 src="src/assets/img/card-cineastas-collection.webp"
-                alt="Las cineastas collection"
+                alt="Colección sobre cineastas"
                 class="card-image"
               />
             </article>
@@ -139,7 +144,7 @@
             <article class="collection-card">
               <img
                 src="src/assets/img/card-te-libros-crimenes.webp"
-                alt="Te, libros y crimenes collection"
+                alt="Colección sobre te, libros y crimenes"
                 class="card-image"
               />
             </article>
@@ -147,7 +152,7 @@
             <article class="collection-card">
               <img
                 src="src/assets/img/card-hollywood-hits.webp"
-                alt="Hits de Hollywood collection"
+                alt="Colección de hits de Hollywood"
                 class="card-image"
               />
             </article>
@@ -155,7 +160,7 @@
             <article class="collection-card">
               <img
                 src="src/assets/img/card-primer-amor.webp"
-                alt="El descubrimiento del primer amor collection"
+                alt="Colección sobre el descubrimiento del primer amor"
                 class="card-image"
               />
             </article>
@@ -163,7 +168,7 @@
             <article class="collection-card">
               <img
                 src="src/assets/img/card-llegan-al-corazon.webp"
-                alt="Historias que llegan al corazón collection"
+                alt="Colección de historias que llegan al corazón"
                 class="card-image"
               />
             </article>
@@ -171,7 +176,7 @@
             <article class="collection-card">
               <img
                 src="src/assets/img/card-secretos-de-la-iglesia.webp"
-                alt="Los secretos de la iglesia collection"
+                alt="Colección sobre los secretos de la iglesia"
                 class="card-image"
               />
             </article>
