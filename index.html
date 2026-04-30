@@ -15,29 +15,31 @@
     <div class="grid-layout">
       <header id="header" class="header">
         <nav class="header-nav">
-          <!-- <a href="/" class="header_logo">
-            <img src="src/assets/logos/logo-filmin.jpg" alt="Filmin logo" />
-          </a> -->
+          <div class="logo-and-items-container">
+            <a href="/" class="header-logo">
+              <img src="src/assets/logos/logo-filmin.jpg" alt="Filmin logo" />
+            </a>
 
-          <ul class="header-menu">
-            <li class="header_menu-item">
-              <a href="#" class="header-menu-link">Inicio</a>
-            </li>
-            <li class="header_menu-item">
-              <a href="#" class="header-menu-link">Cine</a>
-            </li>
-            <li class="header-menu-item">
-              <a href="#" class="header-menu-link">Series</a>
-            </li>
-            <li class="header-menu-item">
-              <a href="#" class="header-menu-link">Colecciones</a>
-            </li>
-            <li class="header-menu-item">
-              <a href="#" class="header-menu-link">Festivales</a>
-            </li>
-            <li class="header-menu-item header-menu-item-dropdown">
-              <a href="#" class="header-menu-link">Más ▾</a>
-              <ul class="header-dropdown">
+            <ul class="header-menu">
+              <li class="header-menu-item">
+                <a href="#" class="header-menu-link">Inicio</a>
+              </li>
+              <li class="header-menu-item">
+                <a href="#" class="header-menu-link">Cine</a>
+              </li>
+              <li class="header-menu-item">
+                <a href="#" class="header-menu-link">Series</a>
+              </li>
+              <li class="header-menu-item">
+                <a href="#" class="header-menu-link">Colecciones</a>
+              </li>
+              <li class="header-menu-item">
+                <a href="#" class="header-menu-link">Festivales</a>
+              </li>
+              <li class="header-menu-item header-menu-item-dropdown">
+                <a href="#" class="header-menu-link">Más ▾</a>
+
+                <!-- <ul class="header-dropdown">
                 <li>
                   <a href="#" class="header-dropdown-link">Recomendador</a>
                 </li>
@@ -58,16 +60,29 @@
                 <li>
                   <a href="#" class="header-dropdown-link">Centro de ayuda</a>
                 </li>
-              </ul>
-            </li>
-          </ul>
+              </ul> -->
+              </li>
+            </ul>
+          </div>
 
-          <div class="header_actions">
-            <a href="#" class="header_btn header_btn-primary">Suscribirse</a>
-            <a href="#" class="header_btn header_btn-secondary"
-              >Iniciar sesión</a
+          <div class="header-actions">
+            <a href="#" class="header-btn header-btn-primary">SUSCRIBIRSE</a>
+            <a href="#" class="header-btn header-btn-secondary"
+              >INICIAR SESIÓN</a
             >
-            <button class="header_search" aria-label="Buscar">🔍</button>
+            <button class="header-search" aria-label="Buscar">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </button>
           </div>
         </nav>
       </header>
@@ -281,18 +296,33 @@
           <!-- ROW 2  -->
           <div class="footer-bottom">
             <div class="footer-logos">
-              <img
-                src="src/assets/logos/logo-creative-europe-media.png"
-                alt="Creative Europe MEDIA"
-              />
-              <img
-                src="src/assets/logos/gobierno-espana-logo.png"
-                alt="Gobierno de España - Ministerio de Cultura"
-              />
-              <img
-                src="src/assets/logos/generalitat-catalunya-logo.png"
-                alt="Generalitat de Catalunya - Departament de Cultura"
-              />
+              <a
+                href="https://culture.ec.europa.eu/"
+                aria-label="Visita la web Creative Europe MEDIA"
+              >
+                <img
+                  src="src/assets/logos/logo-creative-europe-media.png"
+                  alt="Creative Europe MEDIA"
+                />
+              </a>
+              <a
+                href="https://www.cultura.gob.es/portada.html"
+                aria-label="Visita la web Gobierno de España - Ministerio de Cultura"
+              >
+                <img
+                  src="src/assets/logos/gobierno-espana-logo.png"
+                  alt="Gobierno de España - Ministerio de Cultura"
+                />
+              </a>
+              <a
+                href="https://cultura.gencat.cat/ca/inici"
+                aria-label="Visita la web Generalitat de Catalunya - Departament de Cultura"
+              >
+                <img
+                  src="src/assets/logos/generalitat-catalunya-logo.png"
+                  alt="Generalitat de Catalunya - Departament de Cultura"
+                />
+              </a>
             </div>
 
             <span id="footer-version">v7.35.0</span>
